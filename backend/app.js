@@ -7,14 +7,29 @@ const path = require("path");
 const Cors = require("cors");
 const errorMiddleware = require("./middleware/error");
 
-// Config
-  require("dotenv").config({ path: "backend/config/config.env" });
+require("dotenv").config({ path: "backend/config/config.env" });
 
-app.use(Cors());
+
+
 app.use(express.json());
+app.use(express.urlencoded({ limit: "50mb", extended:true }));
+app.use(Cors({
+  origin: ["http://localhost:3000"],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true,
+}));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(fileUpload());
+
+// // Config
+  // require("dotenv").config({ path: "backend/config/config.env" });
+
+// app.use(Cors());
+// app.use(express.json());
+// app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(cookieParser());
+// app.use(fileUpload());
 
 // Route Imports
 const product = require("./routes/productRoute");

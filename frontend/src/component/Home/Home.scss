@@ -144,3 +144,52 @@ body{
   }
   
 }
+
+
+@media only screen and(max-width: 768px){
+  .gellery__section, 
+  .service__section,
+  .work__section{
+    padding: 0 0.5rem;
+  }
+
+  .home__main{
+    background: $background__hero;
+    @include flex(space-between);
+    text-align: center;
+    flex-direction: column;
+    padding: 0 0.5rem;
+    height: 60vh;
+    .col__2{
+      flex-wrap: wrap !important;
+      width: 100%;
+      padding-bottom: 1rem;
+      &:first-child{
+        padding-top: 6rem;
+      }
+      &:last-child{
+        padding-top: 0rem;
+      }
+      h2{
+        font-size: 3rem;
+        line-height: 3rem;
+      }
+      P{
+        font-size: 1rem;
+        font-family: "sans-serif", cursive;
+        color: $gray;
+        margin: 1rem 0;
+      }
+      button{
+        padding: 0.5rem 1rem;
+      }
+      img{
+        width: 100%;
+      }
+    }
+  
+    
+  }
+
+  
+}

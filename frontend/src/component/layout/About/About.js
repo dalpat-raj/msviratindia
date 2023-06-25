@@ -5,7 +5,7 @@ import YouTubeIcon from "@material-ui/icons/YouTube";
 import InstagramIcon from "@material-ui/icons/Instagram";
 const About = () => {
   const visitInstagram = () => {
-    window.location = "https://instagram.com/meabhisingh";
+    window.location = "https://instagram.com";
   };
   return (
     <div className="aboutSection">
@@ -18,30 +18,28 @@ const About = () => {
           <div>
             <Avatar
               style={{ width: "10vmax", height: "10vmax", margin: "2vmax 0" }}
-              src="https://res.cloudinary.com/difhdovme/image/upload/v1684564516/avatars/gy0iineyie6qymehhvfu.jpg"
+              src="https://static.vecteezy.com/system/resources/previews/000/439/863/original/vector-users-icon.jpg"
               alt="Founder"
             />
-            <Typography>Dalpat 
-              Raj
+            <Typography>Owner Name
             </Typography>
             <Button onClick={visitInstagram} color="primary">
               Visit Instagram
             </Button>
             <span>
-              This is a ecommerce wesbite made by @Dalpat. Only with the
-              purpose to teach MERN Stack Programmer
+            Our Clients are very Happy with us and we also provides best Services and amazing products that are not available at anywhere else. go to Order now!! 
             </span>
           </div>
           <div className="aboutSectionContainer2">
             <Typography component="h2">Our Brands</Typography>
             <a
-              href="https://www.youtube.com/channel/UCO7afj9AUo0zV69pqEYhcjw"
+              href="https://www.youtube.com/channel/"
               target="blank"
             >
               <YouTubeIcon className="youtubeSvgIcon" />
             </a>
 
-            <a href="https://instagram.com/meabhisingh" target="blank">
+            <a href="https://instagram.com/" target="blank">
               <InstagramIcon className="instagramSvgIcon" />
             </a>
           </div>

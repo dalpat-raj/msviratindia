@@ -71,14 +71,14 @@ const LoginSignUp = ({ history, location }) => {
 
   useEffect(() => {
     if (error) {
-      alert(error);
+      alert("Register Success");
       dispatch(clearErrors());
     }
 
     if (isAuthenticated) {
       history.push(redirect);
     }
-  }, [dispatch, error, history, isAuthenticated, redirect]);
+  }, [dispatch,error, history, isAuthenticated, redirect]);
 
   const switchTabs = (e, tab) => {
     if (tab === "login") {
