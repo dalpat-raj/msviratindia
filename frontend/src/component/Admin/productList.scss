@@ -1,0 +1,132 @@
+@import "../../sass/variable";
+
+.productListContainer {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  border-left: 1px solid rgba(0, 0, 0, 0.158);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#productListHeading {
+  font: 400 2rem "Roboto";
+  padding: 0.5vmax;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.637);
+  transition: all 0.5s;
+  margin: 1rem;
+  text-align: center;
+}
+
+.productListTable {
+  background-color: white;
+  border: none !important;
+}
+
+.productListTable div {
+  font: 200 1vmax "Roboto";
+  color: rgba(0, 0, 0, 0.678);
+  border: none !important;
+}
+
+.productListTable a,
+.productListTable button {
+  color: rgba(0, 0, 0, 0.527);
+  transition: all 0.5s;
+}
+
+.productListTable a:hover {
+  color: #ff3368;
+}
+
+.productListTable button:hover {
+  color: #ff3368;
+}
+
+.MuiDataGrid-columnHeader div {
+  color: rgb(255, 255, 255);
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .productListContainer__main{
+    display: flex !important;
+    flex-direction: column !important;
+
+  .productListContainer {
+    width: 100vw;
+    flex-direction: column;
+    height: auto;
+  }
+  
+  #productListHeading {
+    padding-top: 4vmax;
+    transition: all 0.5s;
+    margin: 2rem;
+  }
+
+  .productListTable div {
+    font: 300 2vw "Roboto";
+  }
+ 
+  
+  .MuiDataGrid-columnHeader div {
+    font: 300 2vw "Roboto" !important;
+  }
+
+  .MuiDataGrid-root .MuiDataGrid-columnHeaderTitleContainer{
+    padding: 0 0.9rem !important;
+    flex: 2 !important;
+   
+  }
+ 
+  
+  .MuiDataGrid-root .MuiDataGrid-menuIcon{
+    display: none !important;
+  }
+  .MuiDataGrid-root .MuiDataGrid-sortIcon, .MuiDataGrid-root .MuiDataGrid-filterIcon{
+    display: none !important;
+  }
+
+  
+  .MuiDataGrid-row{
+  :nth-child(5){
+    padding-right: 0px !important;
+  }
+  }
+}
+}
+@media only screen and(max-width:450px){
+  .productListContainer__main{
+    
+.productListTable div {
+  font: 200 2vmax "Roboto";
+}
+
+    .MuiDataGrid-row{
+    :nth-child(3){
+      display: none !important;
+      }
+    :nth-child(4){
+      display: none !important;
+      }
+      :nth-child(5){
+        padding-right: 0px !important;
+      }
+    }
+    .MuiDataGrid-root .MuiDataGrid-columnHeaderWrapper{
+      //amount
+      :nth-child(3){
+        display: none !important;
+      }
+      :nth-child(4){
+        display: none !important;
+      }
+    }
+  }
+}
+
+

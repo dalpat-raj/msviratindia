@@ -1,0 +1,16 @@
+@import "../../sass/variable";
+
+.work__flex{
+    display: flex;
+    margin: 1rem 0;
+    .work__image{
+        width: 20%;
+        img{
+            width: 100%;
+            transition: 0.5s all;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}

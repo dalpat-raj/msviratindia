@@ -1,0 +1,102 @@
+@import "../../sass/variable";
+
+.service__flex{
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .service__2, .service__3{
+        
+        position: relative;
+        &::after{
+            content: "";
+            width: 1px ;
+            height: 100%;
+            background-color: $gray;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+  
+    .service{
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        column-gap: 2rem;
+        align-items: center;
+        .icon{
+            width: 70px;
+            img{
+                width: 100%;
+            }
+        }
+        .text{
+            h2{
+                color: $gray-dark;
+                font-size: 1rem;
+            }
+            p{
+                color: $gray;
+                font-family: cursive;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:450px){
+    .service__flex{
+        // flex-wrap: wrap;
+        .service__2, .service__3{
+            &::after{
+                display: none;
+            }
+        }
+        .service{
+            width: 30%;
+            .icon{
+                width: 30px !important;
+            }
+            .text{
+                h2{
+                    font-size: 1rem !important;
+                    line-height: 1.2rem !important;
+                }
+                p{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and(max-width:768px){
+    .service__flex{
+        .service__2, .service__3{
+            &::after{
+                display: none;
+            }
+        }
+        .service{
+            width: 30%;
+            display: flex;
+            column-gap: 2rem;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            .icon{
+                width: 50px;
+            }
+            .text{
+                h2{
+                    font-size: 1.2rem;
+                    line-height: 1.4rem;
+                }
+                p{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}

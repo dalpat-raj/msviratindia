@@ -1,0 +1,103 @@
+@import "../../sass/variable";
+
+
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 48% 23% 23%;
+    grid-template-rows: 100px 200px 110px 100px;
+    grid-column-gap: 2rem;
+    
+   
+    img{
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        border-radius: 20px;
+        transition: 0.5s all;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    h2{
+        font-size: 2rem;
+        color: $gray-dark;
+    }
+    .img__1{
+        grid-row: 2/5;
+        position: relative;
+        width: 100%;
+        img{
+            width: 100%;
+        }
+        .text{
+            position: absolute;
+            top: -100px;
+            left: 0;
+            button{
+                padding: 0.2rem 0.8rem;
+                font-size: 1rem;
+            }
+            p{
+                color: $gray;
+                font-family: cursive;
+            }
+        }
+    }
+    .img__2{
+        grid-row: 1/4;
+        grid-column: 2/3;
+    }
+    .img__3{
+        grid-row: 1/3;
+        grid-column: 3/3;
+    }
+}
+
+@media only screen and(max-width: 768px){
+    .grid{
+        grid-template-columns: 48% 48%;
+        grid-template-rows: 100px 100px 110px 100px;
+        grid-row-gap: 4rem;        
+       
+        img{
+            &:hover{
+                transform: scale(1);
+            }
+        }
+        h2{
+            font-size: 1rem;
+            color: $gray-dark;
+        }
+        .img__1{
+            grid-row: 3/5;
+            grid-column: 1/3;
+            .text{
+                top: 50%; 
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;  
+                h2{
+                    font-size: 1.5rem;
+                    color: $gray-dark2;
+                }             
+                p{
+                    color: $gray-dark;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+        .img__2{
+            grid-row: 1/3;
+            grid-column: 2/3;
+        }
+        .img__3{
+            grid-row: 1/3;
+            grid-column: 1/2;
+         
+        }
+    }
+}

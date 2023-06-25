@@ -1,0 +1,135 @@
+@import "../../sass/variable";
+
+.shippingContainer {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  // background-color: $background__hero;
+}
+
+.shippingBox {
+  background-color: #fff;
+  width: 25vw;
+  height: 90vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.shippingHeading {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.664);
+  font: 400 1.3vmax "Roboto";
+  padding: 1.3vmax;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+  width: 50%;
+  margin: auto;
+}
+
+.shippingForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 2vmax;
+  justify-content: space-evenly;
+  height: 80%;
+  transition: all 0.5s;
+}
+
+.shippingForm > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.shippingForm > div > input,
+.shippingForm > div > select {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 4px;
+  font: 300 0.9vmax cursive;
+  outline: none;
+}
+
+.shippingForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: rgba(0, 0, 0, 0.623);
+}
+
+.shippingBtn {
+  border: none;
+  color: white;
+  font: 300 1vmax "Roboto";
+  width: 100%;
+  padding: 1vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+  outline: none;
+  margin: 2vmax;
+}
+
+@media only screen and (max-width: 450px) {
+  .shippingContainer {
+    width: 100vw;
+  }
+  
+  .shippingBox {
+    padding: 0 0.5rem;
+    width: 100vw;
+    height: 60vh;
+    // margin-top: 4rem;
+  }
+  .shippingForm {
+    padding: 0vmax;
+    justify-content: space-evenly;
+    height: 50%;
+    
+  }
+  
+  .shippingForm > div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    // margin-top: 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+.shippingContainer {
+  column-gap: 0.5rem;
+}
+  .shippingBox {
+    margin-top: 4rem;
+    width: 100vw;
+    height: 85vh;
+  }
+
+  .shippingHeading {
+    font: 400 3vmax "Roboto";
+    padding: 5vw;
+  }
+
+
+  .shippingForm > div > input,
+  .shippingForm > div > select {
+    padding: 2vw 10vw;
+    font: 300 2vw cursive;
+  }
+
+  .shippingForm > div > svg {
+    font-size: 6vw;
+    transform: translateX(3vw);
+  }
+
+  .shippingBtn {
+    font: 300 4vw "Roboto";
+    padding: 2vw;
+  }
+}
