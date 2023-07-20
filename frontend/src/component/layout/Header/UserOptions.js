@@ -10,6 +10,7 @@ import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { useHistory } from "react-router-dom";
 import { logout } from "../../../actions/userAction";
 import { useDispatch, useSelector } from "react-redux";
+import {FaUser} from "react-icons/fa";
 
 
 
@@ -76,10 +77,9 @@ const UserOptions = ({ user }) => {
         className="speedDial"
         icon={
           <img
-            className="speedDialIcon"
-            src={user.avatar.url ? user.avatar.url : "👮‍♂️"}
-            alt="👮‍♂️"
-          />
+            src={<FaUser/>}
+            alt=""
+          /> 
         }
       >
       

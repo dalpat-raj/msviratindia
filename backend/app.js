@@ -22,14 +22,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(fileUpload());
 
-// // Config
-  // require("dotenv").config({ path: "backend/config/config.env" });
-
-// app.use(Cors());
-// app.use(express.json());
-// app.use(bodyParser.urlencoded({ extended: true }));
-// app.use(cookieParser());
-// app.use(fileUpload());
 
 // Route Imports
 const product = require("./routes/productRoute");

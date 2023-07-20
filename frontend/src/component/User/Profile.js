@@ -21,7 +21,7 @@ const Profile = ({ history }) => {
           <div className="profileContainer">
             <div>
               <h1>My Profile</h1>
-              <img src={user.avatar.url} alt={user.name} />
+              <img src={"/Profile.png"} alt={user.name} />
               <Link to="/me/update">Edit Profile</Link>
             </div>
             <div>

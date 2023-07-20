@@ -31,6 +31,7 @@ const Header = () => {
             </div>
             <div className={showmenu ? "show__menu" : "hide__menu"} onClick={()=>setShowmenu(false)}>
                 <ul>
+                <Link to={"/"}><li>Home</li></Link>
                     <Link to={"/products"}><li>Product</li></Link>
                     <div className="dropdown">
                     <button className="dropbtn">Categories</button>
