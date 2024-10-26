@@ -33,7 +33,7 @@ const Home = () => {
         <Carousel autoPlay={true} infiniteLoop={true} showIndicators={true} showStatus={false} transitionTime={"2000"}>
             <div className="home__main" >
                 <div className="col__2">
-                    <h2>Wood & Beautiful <br/>Sofa<br/></h2>
+                    <h2>Coffee Table<br/>Heavy Duty</h2>
                     <p>MS Virat India is India’s upcoming leading furniture Brand.<br/> We offer you new generation T-Table, Modern railing,<br/> Attractive and Luxirous Hinges, and many more products.<br/> Kindly Take a look of our site</p>
                     <a href='#container'>
                         <button className='btn'>
@@ -47,7 +47,7 @@ const Home = () => {
             </div>
             <div className="home__main">
                 <div className="col__2">
-                    <h2>Office Table <br/>Chair<br/></h2>
+                <h2>Coffee Table<br/>Heavy Duty</h2>
                     <p>Incididunt ut labore et dolore magna aliqua quis<br/> ipsum
                     suspendisse ultrices gravida. Risus<br/> commodo viverra</p>
                     <a href='#container'>

@@ -118,9 +118,8 @@ const LoginSignUp = ({ history, location }) => {
                 <Link to="/password/forgot">Forget Password ?</Link>
                 <input type="submit" value="Login" className="loginBtn btn" />
               </form>
-              <form
-                className="signUpForm"
-                ref={registerTab}
+              
+              <form className="signUpForm" ref={registerTab}
                 encType="multipart/form-data"
                 onSubmit={registerSubmit}
               >

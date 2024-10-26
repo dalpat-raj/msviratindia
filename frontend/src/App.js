@@ -179,11 +179,11 @@ function App() {
           component={ProductReviews}
         />
 
-        {/* <Route
+        <Route
           component={
             window.location.pathname === "/process/payment" ? null : NotFound
           }
-        />   */}
+        />  
     
       </Switch>
       <Footer/>
